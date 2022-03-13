@@ -7,74 +7,138 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet"> 
+  
 </head>
 <body>
+  <main class="grid">
+    <div class="grid__user">
+      <div class="grid__user__main">
+        <div class="grid__user__main__portrait">
+        </div>
+        <div class="text">
+          <p>
+            Report for
+          </p>
+          <h1>
+            Jeremy Robson
+          </h1>
+        </div>
+              
+      </div>
+      <div class="grid__user__scale">
+        <a href="" class="grid__user__scaleButton">Daily</a>
+        <a href="" class="grid__user__scaleButton">Weekly</a>
+        <a href="" class="grid__user__scaleButton">Monthly</a>
+      </div>
+    </div>
+    <div class="grid__item">
+      <div class="grid__item__content">
+        <div class="grid__item__content__header">
+          <h2 class="grid__item__content__header__category">
+            Work
+          </h2>
+          <a class="grid__item__content__header__more" href="#">...</a>
+        </div>
+        <p class="grid__item__content__time">
+          5hrs
+        </p>
+        <p class="grid__item__content__previousTime">
+          Previous - 7hrs
+        </p>
+      </div>
+    </div>
+    <div class="grid__item">
+      <div class="grid__item__content">
+        <div class="grid__item__content__header">
+          <h2 class="grid__item__content__header__category">
+            Play
+          </h2>
+          <a class="grid__item__content__header__more" href="#">...</a>
+        </div>
+        <p class="grid__item__content__time">
+          1hr
+        </p>
+        <p class="grid__item__content__previousTime">
+          Previous - 2hrs
+        </p>
+      </div>
+    </div>
+    <div class="grid__item">
+      <div class="grid__item__content">
+        <div class="grid__item__content__header">
+          <h2 class="grid__item__content__header__category">
+            Study
+          </h2>
+          <a class="grid__item__content__header__more" href="#">...</a>
+        </div>
+        <p class="grid__item__content__time">
+          0hrs 
+        </p>
+        <p class="grid__item__content__previousTime">
+          Previous - 1hr
+        </p>
+      </div>
+    </div>
+    <div class="grid__item">
+      <div class="grid__item__content">
+        <div class="grid__item__content__header">
+          <h2 class="grid__item__content__header__category">
+            Exercise
+          </h2>
+          <a class="grid__item__content__header__more" href="#">...</a>
+        </div>
+        <p class="grid__item__content__time">
+          1hr
+        </p>
+        <p class="grid__item__content__previousTime">
+          Previous - 1hr 
+        </p>
+      </div>
+    </div>
+    <div class="grid__item">
+      <div class="grid__item__content">
+        <div class="grid__item__content__header">
+          <h2 class="grid__item__content__header__category">
+            Social
+          </h2>
+          <a class="grid__item__content__header__more" href="#">...</a>
+        </div>
+        <p class="grid__item__content__time">
+          1hr
+        </p>
+        <p class="grid__item__content__previousTime">
+          Previous - 3hrs
+        </p>
+      </div>
+    </div>
+    <div class="grid__item">
+      <div class="grid__item__content">
+        <div class="grid__item__content__header">
+          <h2 class="grid__item__content__header__category">
+            Self Care
+          </h2>
+          <a class="grid__item__content__header__more" href="#">...</a>
+        </div>
+        <p class="grid__item__content__time">
+          0hrs
+        </p>
+        <p class="grid__item__content__previousTime">
+          Previous - 1hr
+        </p>
+      </div>
+    </div>
+  </main>
 
-  Report for
-  Jeremy Robson
 
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Marcus Tulius Ciceron</a>.
   </div>
 </body>
 </html>

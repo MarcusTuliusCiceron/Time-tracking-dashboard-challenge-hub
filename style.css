@@ -1,0 +1,221 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  font-family: 'Manrope', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  background-color: #0f1424;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 64rem) {
+  body {
+    padding: 10vw;
+  }
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (17vw)[4];
+      grid-template-columns: repeat(4, 17vw);
+  -ms-grid-rows: (24vh)[2];
+      grid-template-rows: repeat(2, 24vh);
+  margin-bottom: 30px;
+      grid-template-areas: "A B C D" "A E F G";
+  gap: 3vw;
+}
+
+@media (max-width: 64rem) {
+  .grid {
+    -ms-grid-rows: (40vw)[4];
+        grid-template-rows: repeat(4, 40vw);
+    -ms-grid-columns: (40vw)[2];
+        grid-template-columns: repeat(2, 40vw);
+        grid-template-areas: "A A" "B C" "D E" "F G";
+    gap: 20px;
+  }
+}
+
+@media (max-width: 43.125em) {
+  .grid {
+    -ms-grid-columns: 80vw;
+        grid-template-columns: 80vw;
+    -ms-grid-rows: (55vw)[8];
+        grid-template-rows: repeat(8, 55vw);
+        grid-template-areas: "A" "B" "C" "D" "E" "F" "G" "H";
+    gap: 20px;
+  }
+}
+
+.grid__user {
+  background-color: #1c1f4a;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: A;
+  border-radius: 25px;
+}
+
+.grid__user__main {
+  background-color: #5847eb;
+  border-radius: 25px;
+  padding: 30px;
+  padding-bottom: 0;
+}
+
+@media (max-width: 43.125em) {
+  .grid__user__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px;
+  }
+}
+
+.grid__user__main .text p {
+  color: #bdc1ff;
+}
+
+.grid__user__main .text h1 {
+  font-weight: 300;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 43.125em) {
+  .grid__user__main .text h1 {
+    font-size: 25px;
+    padding: 0;
+  }
+}
+
+.grid__user__main__portrait {
+  width: 84px;
+  height: 84px;
+  background-image: url(image-jeremy.png);
+  background-size: contain;
+  border-radius: 50%;
+  border: solid 4px white;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 43.125em) {
+  .grid__user__main__portrait {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+.grid__user__scale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+}
+
+@media (max-width: 43.125em) {
+  .grid__user__scale {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.grid__user__scale a {
+  color: #bdc1ff;
+  text-decoration: none;
+  color: 18px;
+  padding-bottom: 24px;
+  font-weight: 400;
+}
+
+.grid__user__scale a:hover {
+  color: white;
+}
+
+@media (max-width: 43.125em) {
+  .grid__user__scale a {
+    font-size: 20px;
+  }
+}
+
+.grid__item {
+  background-color: #ff5c7c;
+  padding-top: 45px;
+  border-radius: 25px;
+  background-image: url(/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.grid__item__content {
+  background-color: #1c1f4a;
+  border-radius: 25px;
+  height: 100%;
+  padding: 30px;
+}
+
+.grid__item__content__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grid__item__content__header__category {
+  margin-bottom: 35px;
+}
+
+.grid__item__content__header a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+}
+
+.grid__item__content__time {
+  font-size: 45px;
+}
+/*# sourceMappingURL=style.css.map */
