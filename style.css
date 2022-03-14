@@ -204,9 +204,39 @@ body {
   background-color: #ff5c7c;
   padding-top: 45px;
   border-radius: 25px;
-  background-image: url(/icon-study.svg);
+  background-image: url(icon-study.svg);
   background-repeat: no-repeat;
   background-position: right top;
+}
+
+.grid__item_Work {
+  background-image: url(icon-work.svg);
+  background-color: #ff8c66;
+}
+
+.grid__item_Play {
+  background-image: url(icon-play.svg);
+  background-color: #56c2e6;
+}
+
+.grid__item_Study {
+  background-image: url(icon-study.svg);
+  background-color: #ff5c7c;
+}
+
+.grid__item_Exercise {
+  background-image: url(icon-exercise.svg);
+  background-color: #4acf81;
+}
+
+.grid__item_Social {
+  background-image: url(icon-social.svg);
+  background-color: #7536d3;
+}
+
+.grid__item_SelfCare {
+  background-image: url(icon-self-care.svg);
+  background-color: #f1c65b;
 }
 
 .grid__item__content {

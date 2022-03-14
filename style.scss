@@ -150,9 +150,35 @@ body{
         background-color: $lightRed;
         padding-top: 45px;
         border-radius: $borderRadius;
-        background-image: url(/icon-study.svg);
+        background-image: url(icon-study.svg);
         background-repeat: no-repeat;
         background-position: right top;
+
+        &_Work{
+            background-image: url(icon-work.svg);
+            background-color: $orange;
+        }
+        &_Play{
+            background-image: url(icon-play.svg);
+            background-color: $softBlue;
+        }
+        &_Study{
+            background-image: url(icon-study.svg);
+            background-color: $lightRed;
+        }
+        &_Exercise{
+            background-image: url(icon-exercise.svg);
+            background-color: $limeGreen;
+        }
+        &_Social{
+            background-image: url(icon-social.svg);
+            background-color: $violet;
+        }
+        &_SelfCare{
+            background-image: url(icon-self-care.svg);
+            background-color: $softOrange;
+        }
+
 
         
         &__content{
