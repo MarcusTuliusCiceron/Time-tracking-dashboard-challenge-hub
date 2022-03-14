@@ -37,7 +37,7 @@ body{
     gap: 3vw;
     
     @include breakpoint-down(medium){
-        grid-template-rows: repeat(4, 40vw);
+        grid-template-rows: 25vw repeat(3, 40vw);
         grid-template-columns: repeat(2, 40vw);
         grid-template-areas: 
         "A A"
@@ -69,27 +69,26 @@ body{
             border-radius: $borderRadius;
             padding: 30px;
             padding-bottom: 0;
-            @include breakpoint-down(small){
+            @include breakpoint-down(medium){
                 display: flex;
                 align-items: center;
-                padding: 30px;
-
+                padding: 20px;
             }
             .text{
                 
-                @include breakpoint-down(small){
+                @include breakpoint-down(medium){
 
                 }
                 p{
                     color: $paleBlue;
-                    @include breakpoint-down(small){
+                    @include breakpoint-down(medium){
 
                     }
                 }
                 h1{
                     font-weight: 300;
                     padding-bottom: 80px;
-                    @include breakpoint-down(small){
+                    @include breakpoint-down(medium){
                         font-size: 25px;
                         padding: 0;
                     }
@@ -104,12 +103,15 @@ body{
                 border-radius: 50%;
                 border: solid 4px white;
                 margin-bottom: 40px;
+                @include breakpoint-down(medium){
+                    margin-bottom: 0;
+                    margin-right: 20px;
+                }
                 @include breakpoint-down(small){
                     width: 70px;
                     height: 70px;
                     margin-bottom: 0;
                     margin-right: 20px;
-
                 }
             }
             
@@ -118,6 +120,11 @@ body{
             display: flex;
             flex-direction: column;
             padding: 30px;
+            @include breakpoint-down(medium){
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
             @include breakpoint-down(small){
                 flex-direction: row;
                 justify-content: space-around;
@@ -154,11 +161,21 @@ body{
             
             height: 100%;
             padding: 30px;
+            position: relative;
+            @include breakpoint-down(small){
+                padding: 5vw;
+            }
             &__header{
                 display: flex;
                 justify-content: space-between;
                 &__category{
                     margin-bottom: 35px;
+                    @include breakpoint-down(medium){
+                        margin-bottom: 50px;
+                    }
+                    @include breakpoint-down(small){
+                        margin-bottom: 20px;
+                    }
                 }
                 a{
                     color: white;
@@ -170,9 +187,32 @@ body{
             
             &__time{
                 font-size: 45px;
+                @include breakpoint-down(medium){
+                    position: absolute;
+                    bottom: 50%;
+                    transform: translateY(50%);
+                    left: 30px;
+                    font-size: 7vw;
+                }
+                @include breakpoint-down(small){
+                    position: absolute;
+                    bottom: 50%;
+                    left: 5vw;
+                    transform: translateY(50%);
+                    font-size: 8vw;
+                }
             }
             &__previousTime{
-
+                @include breakpoint-down(medium){
+                    position: absolute;
+                    bottom: 30px;
+                    left: 30px;
+                }
+                @include breakpoint-down(small){
+                    position: absolute;
+                    bottom: 5vw;
+                    left: 5vw;
+                }
             }
             
         }
