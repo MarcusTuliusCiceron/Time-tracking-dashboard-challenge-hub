@@ -20,7 +20,7 @@ const carePrevious = document.querySelector('.care_previous');
 const timeArray = [workTime, playTime, studyTime, exerciseTime, socialTime, careTime];
 const previousArray = [workPrevious, playPrevious, studyPrevious, exercisePrevious, socialPrevious, carePrevious];
 
-let currentScale = 'monthly';
+let currentScale = 'daily';
 let myRequest = new Request("data.json")
 let extractedData;
 
@@ -33,7 +33,6 @@ function Myfunction(scale, request){
         if (scale == 'daily'){
 
             for (let i = 0; i < timeArray.length; i++) {
-                console.log("index: " + i)
                 timeArray[i].textContent = data[i].timeframes.daily.current + " hrs";
                 previousArray[i].textContent = "Last day - " + data[i].timeframes.daily.previous + " hrs";
               } 
@@ -66,11 +65,31 @@ window.onload = () =>{
 
 
 
-dailyButton.addEventListener('click', () =>{
-    
+dailyButton.addEventListener('click', () =>{  
     console.log('clicked !');
     currentScale = "daily";
     Myfunction(currentScale, myRequest);
+    dailyButton.classList.add('active');
+    weeklyButton.classList.remove('active');
+    monthlyButton.classList.remove('active');
+})
+
+weeklyButton.addEventListener('click', () =>{  
+    console.log('clicked !');
+    currentScale = "weekly";
+    Myfunction(currentScale, myRequest);
+    dailyButton.classList.remove('active');
+    weeklyButton.classList.add('active');
+    monthlyButton.classList.remove('active');
+})
+
+monthlyButton.addEventListener('click', () =>{  
+    console.log('clicked !');
+    currentScale = "monthly";
+    Myfunction(currentScale, myRequest);
+    dailyButton.classList.remove('active');
+    weeklyButton.classList.remove('active');
+    monthlyButton.classList.add('active');
 })
 
 
